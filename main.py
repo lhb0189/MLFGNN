@@ -4,12 +4,12 @@ from tool import set_log
 import torch
 from data import MoleDataSet
 from graph import GraphOne,GraphBatch
-num_folds=1
+num_folds=10
 log_path="save_model/log"
 log=set_log("Train",save_path=log_path)
 dataset_path="Process_Dataset\\Process_BBBP.csv"
 dataset_type="classification"#classification or regression
-seed=3
+seed=[0,1,2,3,4,5,6,7,8,9]
 val_path=None
 test_path=None
 split=[0.8,0.1,0.1]
